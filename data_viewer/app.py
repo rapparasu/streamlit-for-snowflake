@@ -11,20 +11,30 @@ import modules.graphs as graphs
 import modules.formats as formats
 import modules.charts as charts
 import modules.utils as utils
-#import auth
+import auth
 
 st.set_page_config(layout="wide")
 st.title("Hierarchical Data Viewer")
 st.caption("Display your hierarchical data with charts and graphs.")
 
+#call option1
+#auth.check_password()
+
+#call option2
+auth.check_user_and_password()
+
+
 #auth.check_password()
 #auth.check_user_and_password()
 
+#session_state is per browser. if you use a different browser streamlit create a new session. 
+#generate a globally unique identifier using uuid.uuid4()
 def getSessionId():
     if "session_id" not in st.session_state:
         st.session_state["session_id"] = str(uuid.uuid4())
     return st.session_state["session_id"]
 
+#cache_data is for all users regardless of the browsers they use
 @st.cache_data(show_spinner="Loading the CSV file...")
 def loadFile(session_id, filename):
     return pd.read_csv(filename).convert_dtypes()
@@ -46,7 +56,7 @@ with st.sidebar:
     parent = st.selectbox("Parent Column Name", cols, index=1)
     df = df_orig[[child, parent]]
 
-    #st.sidebar.markdown(f"User: {st.experimental_user.email}")
+    st.sidebar.markdown(f"User: {st.experimental_user.email}")
 
 tabSource, tabFormat, tabGraph, tabChart = st.tabs(
     ["Source", "Format", "Graph", "Chart"])
