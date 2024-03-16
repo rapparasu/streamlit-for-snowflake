@@ -1,6 +1,7 @@
 '''
 represent employee hierarchial data in differen charts: Treemap, icicle, sunburst, sankey etc. 
-streamlit run first_app\app_charts.py
+
+streamlit run first_app\3_app_charts.py
 
 '''
 

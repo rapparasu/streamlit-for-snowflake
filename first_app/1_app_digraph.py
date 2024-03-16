@@ -2,7 +2,7 @@
 represent hierarchial data as digraph. 
 
 as the code contains streamlit, you will need to run the below python file:
-streamlit run first_app\app_digraph.py
+streamlit run first_app\1_app_digraph.py
 
 run the below command to see their demo project and look at their code. 
 streamlit hello

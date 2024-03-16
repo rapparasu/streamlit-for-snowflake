@@ -4,7 +4,7 @@
 represent employee hierarchial data in differen charts: Treemap, icicle, sunburst, sankey etc. 
 These charts are rendered in different tabs. 
 
-streamlit run first_app\app_charts_tabs.py
+streamlit run first_app\4_app_charts_tabs.py
 
 '''
 

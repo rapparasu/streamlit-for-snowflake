@@ -1,6 +1,6 @@
 '''
 this python fils shows the basic list of streamlit methods available
-streamlit run first_app\app2.py
+streamlit run first_app\7_app_streamlit_functions.py
 
 '''
 

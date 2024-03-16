@@ -1,7 +1,7 @@
 
 """"
 show employees hierarchial data (dataframe, Graph and Dot Code) in tabs where the 
-data from the uploaded file is cached across page run triggered by the input controls. 
+data from the uploaded file is cached across page runs triggered by the input controls. 
 
 
 streamlit run first_app\8_app_hierarchial_tabular_with_caching.py

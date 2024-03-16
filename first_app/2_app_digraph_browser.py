@@ -2,7 +2,7 @@
 """
 represent the hierarchial data for employees.csv by contructing a digraph and opening that in a browser
 
-streamlit run first_app\app_digraph_browser.py
+streamlit run first_app\2_app_digraph_browser.py
 
 """
 import pandas as pd
